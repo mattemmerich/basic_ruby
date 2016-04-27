@@ -3,9 +3,11 @@
 	puts "#{string} Only in America..."
 end
 	"worlds largest ball of twine."
+	'string'.capitalizeFirstLetter()
+	America
 
 #Create a function to find the maximum value in an array of numbers
-num array = [80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
+array = [80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
 def max_number(array)
 	n=0
 	array.each do |y|
@@ -26,11 +28,12 @@ def guitar(brand, model)
 	 	hash[brand[g]] = model[g]
 	 	g+=1
 	 end
-	hash
+	print hash
 end
 guitar(a,b)
 	 
 #fizzBuzz
+def fizzbuzz()
 for i in 1..100
 	if i%3 == 0 && i%5 == 0
 		puts "fizz"
