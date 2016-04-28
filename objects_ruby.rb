@@ -9,19 +9,19 @@ class Calculator
 	end	
 
 		def add
-			result = a + b
+			result = @value1 + @value2
 		end 
 
 		def subtract
-			result = a - b
+			result = @value1 + @value2
 		end
 
 		def multiply
-		  result = a*b
+		  result = @value1 + @value2
 		end
 
 		def divide
-		  result = a/b
+		  result = @value1 + @value2
 	end
 end
 

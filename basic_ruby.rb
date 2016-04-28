@@ -2,12 +2,11 @@
  def America(string)
 	puts "#{string} Only in America..."
 end
-	"worlds largest ball of twine."
-	'string'.capitalizeFirstLetter()
-	America
+	a = "worlds largest ball of twine."
+	America(a)
 
 #Create a function to find the maximum value in an array of numbers
-array = [80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
+numbers = [80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
 def max_number(array)
 	n=0
 	array.each do |y|
@@ -15,18 +14,22 @@ def max_number(array)
 			n=y
 		end
 	end
-	puts 
+	puts n
 end
+max_number(numbers)
+
 
 #Create a function that takes two arguments - both of them arrays.
  a = [:gibson, :fender]
  b = ["SG", "Strat"]
 def guitar(brand, model)
-	 g=0
+	 # g=0
 	 hash={}
-	 brand.each do |i| 
-	 	hash[brand[g]] = model[g]
-	 	g+=1
+	 i = 0
+	 while i<brand.length 
+	 	hash[brand[i]] = model[i]
+	 	i+=1
+	 	
 	 end
 	print hash
 end
@@ -34,15 +37,16 @@ guitar(a,b)
 	 
 #fizzBuzz
 def fizzbuzz()
-for i in 1..100
-	if i%3 == 0 && i%5 == 0
-		puts "fizz"
-		elsif %3 == 0
+	for i in 1..100
+		if i%3 == 0 && i%5 == 0
+			puts "fizz"
+		elsif i%3 == 0
 			puts "buzz"
-		elsif %5 == 0
+		elsif i%5 == 0
 			puts "fizzbuzz"
 		else
-		puts i
+			puts i
+		end
 	end
 end
 
