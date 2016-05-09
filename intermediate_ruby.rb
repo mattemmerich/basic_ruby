@@ -1,27 +1,19 @@
 
 
-#///////////////////////////////////new stuff////////////////////////////////////////////
+#///////////////////////////////////NEW STUFF////////////////////////////////////////////
+def change(ramones, bop)
+	bop.times do
+		band= [Joey, Johnn, Dee Dee, Tommy]
+		band.insert(0,band.pop)
+	end
 
-int [] unOrderedArr = {1,2,3,4,5,6,7,8};
-        int  orderToRotate =2;
+end
 
-       for(int i = 0; i<orderToRotate; i++){
 
-           for(int j = unOrderedArr.length-1; j>0; j--){
-               int temp = unOrderedArr[j];
-               unOrderedArr[j] = unOrderedArr[j-1];
-               unOrderedArr[j-1] = temp;
 
-           }
 
-        }
 
-       for(int j = 0; j<unOrderedArr.length; j++){
-         System.out.println("element is " + unOrderedArr[j]);
-
-           }
-
-#/////////////////////////////////Old stuff/////////////////////////////////////////////
+#/////////////////////////////////OLD STUFF/////////////////////////////////////////////
 
 def change(x)
 
